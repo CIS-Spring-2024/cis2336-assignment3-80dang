@@ -24,7 +24,9 @@ function addToOrder(button, cost) {
 
     localStorage.setItem('cart', JSON.stringify(cart)); // Store updated cart in localStorage
 
-    var totalCost = quantity * cost; // Calculate the total cost
+    // Calculate the total cost, accounting for existing quantity if item is already in cart
+    var totalCost = cart[itemIndex !== -1 ? itemIndex : cart.length - 1].quantity * cost;
 
     alert(quantity + " x " + itemName + " added to cart! Total cost: $" + totalCost.toFixed(2));
 }
+

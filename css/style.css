@@ -163,35 +163,6 @@ header .icon-cart span{
     right: -20%;
 }
 
-.cartTab{
-    width: 400px;
-    background-color: #353432;
-    color: #eee;
-    position:fixed;
-    inset:0 0 0 auto;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-}
-.cartTab h1{
-    padding: 20px;
-    margin: 0;
-    font-weight: 300;
-}
-
-.cartTab .btn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.cartTab .btn button{
-    background-color: var(--gold);
-    border: none;
-    font-family: Poppins;
-    font-weight: 500;
-    cursor: pointer;
-}
-.cartTab .btn .close{
-    backgorund-color:#eee;
-}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -404,5 +375,47 @@ main {
     border-color: #C9102E;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+/* cart design */
+.order-details {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    max-width: 600px;
+    margin: auto; /* Added to center horizontally /
+    position: absolute; / Added for vertical centering /
+    top: 50%; / Added for vertical centering /
+    left: 50%; / Added for vertical centering /
+    transform: translate(-50%, -50%); / Added for vertical centering */
+}
+
+.order-details h1 {
+    text-align: center;
+}
+.item {
+    margin-bottom: 10px;
+}
+.item p {
+    margin: 0;
+}
+.total-price {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.item input[type="number"] {
+    width: 50px; 
+}
+
+
+.item button {
+    margin-left: 10px; 
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 80px;
 }
 
